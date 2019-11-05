@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="index.css">
+        <style media="screen">
+            .buttonContainer {
+                width: 75%;
+                border: solid black 1px;
+            }
+            .buttonClass {
+                width: 30% ;
+                height: 48px;
+                font-size: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="buttonContainer" id='btns'>
+            <button id='btn1' class='buttonClass'>1</button>
+            <button id='btn2' class='buttonClass'>2</button>
+            <button id='btn3' class='buttonClass'>3</button>
+            <button id='btn4' class='buttonClass'>4</button>
+            <button id='btn5' class='buttonClass'>5</button>
+            <button id='btn6' class='buttonClass'>6</button>
+            <button id='btn7' class='buttonClass'>7</button>
+            <button id='btn8' class='buttonClass'>8</button>
+            <button id='btn9' class='buttonClass'>9</button>
+        </div>
+
+        <script>
+
+            var btnFive = document.getElementById("btn5");
+
+            var btnOne = document.getElementById('btn1');
+            var btnTwo = document.getElementById('btn2');
+            var btnThree = document.getElementById('btn3');
+            var btnFour = document.getElementById('btn4');
+            var btnSix = document.getElementById('btn6');
+            var btnSeven = document.getElementById('btn7');
+            var btnEight = document.getElementById('btn8');
+            var btnNine = document.getElementById('btn9');
+
+            var counter = 0;
+            btnFive.onclick = () => {
+                if (counter==0){
+                    btnOne.innerHTML = 4 ;
+                    btnTwo.innerHTML = 1 ;
+                    btnThree.innerHTML = 2 ;
+                    btnSix.innerHTML = 3 ;
+                    btnNine.innerHTML = 6;
+                    btnEight.innerHTML = 9;
+                    btnSeven.innerHTML = 8;
+                    btnFour.innerHTML = 7 ;
+                    counter++;
+                }else if(counter==1){
+                    btnOne.innerHTML = 7 ;
+                    btnTwo.innerHTML = 4 ;
+                    btnThree.innerHTML = 1 ;
+                    btnSix.innerHTML = 2 ;
+                    btnNine.innerHTML = 3 ;
+                    btnEight.innerHTML = 6 ;
+                    btnSeven.innerHTML =9 ;
+                    btnFour.innerHTML = 8 ;
+                    counter++;
+                }else if(counter==2){
+                    btnOne.innerHTML = 8 ;
+                    btnTwo.innerHTML = 7 ;
+                    btnThree.innerHTML = 4 ;
+                    btnSix.innerHTML = 1 ;
+                    btnNine.innerHTML = 2 ;
+                    btnEight.innerHTML = 3 ;
+                    btnSeven.innerHTML = 6 ;
+                    btnFour.innerHTML = 9 ;
+                    counter++;
+                }else if(counter==3){
+                    btnOne.innerHTML = 9 ;
+                    btnTwo.innerHTML = 8 ;
+                    btnThree.innerHTML = 7 ;
+                    btnSix.innerHTML = 4 ;
+                    btnNine.innerHTML = 1 ;
+                    btnEight.innerHTML = 2 ;
+                    btnSeven.innerHTML =3 ;
+                    btnFour.innerHTML = 6 ;
+                    counter++;
+                }else if(counter==4){
+                    btnOne.innerHTML = 6 ;
+                    btnTwo.innerHTML = 9 ;
+                    btnThree.innerHTML = 8 ;
+                    btnSix.innerHTML = 7 ;
+                    btnNine.innerHTML = 4 ;
+                    btnEight.innerHTML = 1 ;
+                    btnSeven.innerHTML = 2 ;
+                    btnFour.innerHTML = 3 ;
+                    counter++;
+                }else if(counter==5){
+                    btnOne.innerHTML = 3 ;
+                    btnTwo.innerHTML = 6 ;
+                    btnThree.innerHTML = 9 ;
+                    btnSix.innerHTML = 8 ;
+                    btnNine.innerHTML = 7 ;
+                    btnEight.innerHTML = 4 ;
+                    btnSeven.innerHTML = 1 ;
+                    btnFour.innerHTML = 2 ;
+                    counter++;
+                }else if(counter==6){
+                    btnOne.innerHTML = 2 ;
+                    btnTwo.innerHTML = 3 ;
+                    btnThree.innerHTML = 6 ;
+                    btnSix.innerHTML = 9 ;
+                    btnNine.innerHTML = 8 ;
+                    btnEight.innerHTML = 7 ;
+                    btnSeven.innerHTML = 4 ;
+                    btnFour.innerHTML = 1 ;
+                    counter++;
+                }else{
+                    btnOne.innerHTML = 1 ;
+                    btnTwo.innerHTML = 2 ;
+                    btnThree.innerHTML = 3 ;
+                    btnSix.innerHTML = 6 ;
+                    btnNine.innerHTML = 9 ;
+                    btnEight.innerHTML = 8 ;
+                    btnSeven.innerHTML = 7 ;
+                    btnFour.innerHTML = 4 ;
+                    counter = 0;
+                }
+            }
+    </script>
+    </body>
+</html>
